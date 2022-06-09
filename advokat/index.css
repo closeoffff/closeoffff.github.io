@@ -1,0 +1,130 @@
+.top-info{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-image: linear-gradient(to top, #767676, #868696, #9198b7, #97abdb, #95c0ff);
+}
+/* полоска меню */
+.navbar{
+    background-image: linear-gradient(to right top, #051937, #2f344d, #525365, #74747d, #979797);
+    align-items: center;
+
+
+}
+/* пункти меню */
+.nav-item .nav-link{
+    color: black !important;
+    font-weight: 900;
+}
+.socio-link a{
+    color: black;
+    font-size: 1.3rem;
+    transition: 0.8sіі;
+}
+.socio-link a:hover{
+    color: orange;
+    text-shadow: 0px 0px 3px white;
+}
+.logo-img{
+    width: 50%;
+}
+.main-foto{
+    background-image: url(Depositphotos_129380828_original_1.jpg);
+    background-size: cover;
+    height: 400px;
+    background-position: 50% 50%;
+    align-items: center;
+    text-align: left;
+    font-family: 'Charis SIL', serif;
+    color: white;
+}
+@media screen and (min-width: 992px ) {
+    h1{
+        margin-left: 50px;
+    }
+}
+.my-card{
+ margin: 20px;
+ padding: 20px 10px;
+ box-shadow: 0px 0px 20px lightgray;
+ height: 100%;
+ 
+}
+.my-card h2{
+    margin-bottom: 20px;
+}
+.my-card p{
+    /* стилі для абзаців з перших карточок */
+}
+.my-card:hover{
+ box-shadow: 0px 0px 20px gray;
+
+}
+footer{
+    background-color: black;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    
+}
+.spetc-card img{
+    width: 20%;
+    margin: 30px;
+
+}
+.spetc-card{
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    font-family: 'Gentium Plus', serif;
+    transition: 0.5s;
+}
+.spetc-card:hover{
+    transform: scale(1.1);
+}
+.spetc-cont{
+    margin-top: 80px;
+    background-image: linear-gradient(to bottom, #cacfd6, #b5bfc2, #a4aead, #959d98, #898b85);
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+.title-spetc{
+    text-align: center;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 4rem;
+}
+.spetc-card p{
+    font-size: 1.3rem;
+}
+.spetc-card h3{
+    font-size: 1.8rem;
+    border-bottom: 1px solid black;
+    margin-bottom: 15px;
+    font-weight: 700 ;
+}
+.price{
+    padding: 70px 0;
+    background-image: url(fon2.jpg);
+    
+}
+.price h2, .title-poslygi{
+text-align: center;
+padding: 30px 0;
+font-size: 2.5rem;
+color: #051937;
+font-family: 'Roboto Mono', monospace;
+letter-spacing: 2px;
+}
+ .price p{
+    font-family: 'Gentium Plus', serif;
+    font-size: 2rem;
+
+
+  
+ } 
+.first-container{
+    margin-top: 80px;
+}
+.text{
+    color: white;
+    text-align: right;
+}
