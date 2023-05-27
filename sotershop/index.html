@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sk8/lux</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Soter Store</h1>
+    <div id="container" v-cloak>
+        <div class="search-wrap">
+            <label for="search-inp">Знайти за назвою:</label>
+            <input type="text" v-model="search" v-on:keypress.enter="myFilter" id="search-inp">
+        </div>
+        <div class="content">
+            <div class="menu">
+                <ul class="menu-list">
+                    <li v-for="(item, index) in nameArr" v-on:click="showNotebook(index)">
+                        {{item}}
+                    </li>
+                </ul>
+            </div>
+            <div class="card-wrap">
+                <div class="card" v-for="(item, index) in chooseNotebooks"
+                    v-on:mouseenter="{hover = true; hoverNumber = index}" v-on:mouseleave="hover = false">
+
+                    <div class="card-img">
+                        <img v-bind:src="item.src" alt="">
+                    </div>
+                    <div class="card-name card-item">
+                        <b>Бренд: </b> {{item.brend}}
+                    </div>
+                    <div class="card-model card-item">
+                        <b>Матеріал: </b> {{item.material}}
+                    </div>
+                    <div class="card-item procesor">
+                        <b>Розмір: </b> {{item.size}}
+                    </div>
+                    <div class="price-div card-item">
+                        <p> <b>Ціна: </b> {{item.price}} грн</p>
+                    </div>
+                </div>
+                <div class="no-info" v-if="chooseNotebooks.length == 0">
+                    <p>У нас ще нема інформації щодо моделей цієї марки</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://unpkg.com/vue@3"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
